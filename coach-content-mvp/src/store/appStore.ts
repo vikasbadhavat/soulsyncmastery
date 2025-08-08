@@ -78,7 +78,7 @@ const defaultTemplates: Template[] = [
 
 export const useAppStore = create<AppState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       brand: defaultBrand,
       templates: defaultTemplates,
       ideas: [],

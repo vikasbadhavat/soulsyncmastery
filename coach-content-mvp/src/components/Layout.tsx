@@ -3,7 +3,7 @@ import { useAppStore } from '../store/appStore'
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors
-   ${isActive ? 'bg-brand text-white' : 'text-gray-700 hover:bg-gray-100'}`
+   ${isActive ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`
 
 export default function Layout() {
   const brandName = useAppStore((s) => s.brand.coachName)
